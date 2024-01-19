@@ -10,17 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+   
 
     - name: Create or Update File
       run: echo "This is the content of the file." > example-file.txt
-
-    - name: Commit and Push Changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add example-file.txt
-        git status
-        git commit -m "Add or update example-file.txt"
-        git push
