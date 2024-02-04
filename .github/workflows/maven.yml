@@ -30,10 +30,4 @@ jobs:
     - name: Save Test Results
       if: always()
       uses: actions/upload-artifact@v2
-      with:
-        name: test-results
-        path: target/surefire-reports  # adjust the path based on your project structure
-
-    - name: Deploy Artifact
-      if: success()
       # Add your deployment steps here, e.g., deploying to a server, publishing to a repository, etc.
