@@ -3,10 +3,10 @@ name: Maven Build and Test
 on:
   push:
     branches:
-      - main  # You can change this to match your main branch name
+      - main  
   pull_request:
     branches:
-      - main  # You can change this to match your main branch name
+      - main  
 
 jobs:
   build:
@@ -36,4 +36,3 @@ jobs:
 
     - name: Deploy Artifact
       if: success()
-      # Add your deployment steps here, e.g., deploying to a server, publishing to a repository, etc
